@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f5f5f5;
+}
+
+header{
+    background-color: #c25968;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header-logo img{
+    height: 65px;
+}
+
+.header-texto{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #EFE1C7;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+main{
+    padding: 50px 150px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 50px;
+}
+
+.texto-padrao, label, select, ::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #202221;
+}
+
+.texto-padrao{
+    text-align: center;
+}
+
+.exibicao{
+    width: 65%;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+/* Estilo para o contêiner de cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas de largura igual */
+    gap: 15px; /* Espaço entre os cards */
+    padding: 15px;
+    justify-items: center; /* Alinha os cards no centro */
+  }
+  
+  /* Estilo para cada card */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(143, 67, 78, 0.3);
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px; /* Largura máxima para os cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Efeito de hover no card */
+  .card:hover {
+    transform: translateY(-5px); /* Menor efeito de hover */
+  }
+  
+  /* Estilo para a imagem da capa */
+  .card img {
+    width: 100%;
+    height: 250px; /* Ajuste de altura para a imagem */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para o nome da série */
+  .card h3 {
+    font-size: 1.2rem; /* Tamanho de fonte para o nome da série */
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Estilo para as informações de temporadas e gênero */
+  .card .info {
+    font-size: 0.9rem;
+    color: #202221;
+    margin: 5px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Estilo para o botão de exclusão */
+  .delete-btn {
+    background-color: #c25968;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Espaço entre o texto e o botão */
+  }
+  
+  /* Efeito de hover no botão de exclusão */
+  .delete-btn:hover {
+    background-color: #8f434e;
+  }
+  
+  
+form{
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:  #f2bcba;
+    border: 1px solid #c25968;
+    border-radius: 15px;
+
+}
+
+label{
+    display: block;
+    padding: 8px 0 5px 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #c25968;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+}
+
+.botoes-form{
+    display: flex;
+    padding-top: 18px;
+    gap: 15px;
+}
+
+.botoes-form button{
+    padding: 10px 15px;
+    background-color: #c25968;
+    color: #EFE1C7;
+    cursor: pointer;
+}
+
+
+
+#c25968
+#f2bcba
+#7d4ab3
+#b66e82
+#202221
+#efe1c7

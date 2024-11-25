@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/img/logo-watchie.png">
+        </div>
+        <div>
+            <h2 class="header-texto">Watchie</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="barra-pesquisa"></section>
+
+        <div class="conteudo">
+            <section class="exibicao">
+                <h1 class="texto-padrao">Minhas Séries: </h1>
+                <div id="cards-container" class="cards-container">
+                    <!-- Os cards serão injetados aqui -->
+                    <div id="empty-message" class="empty-message" style="display: none;">
+                        <p>Que pena, parece que você não adicionou nenhuma série ainda.</p>
+                    </div>
+                </div> 
+                
+            </section>
+    
+            <section class="cadastro">
+                <h2 class="texto-padrao">Adicionar nova série</h2>
+                <form id="form-serie" action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label>Nome da Série:</label>
+                        <input type="text" id="nome-serie" name="nome-serie" placeholder="Digite o nome da série" required>
+                    </div>
+                    
+                    <div>
+                        <label>Gênero:</label>
+                        <select id="genero" name="genero" required>
+                            <option value="" disabled selected>Selecione o gênero</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Comédia">Comédia</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Suspense">Suspense</option>
+                            <option value="Fantasia">Fantasia</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Quantidade de Temporadas:</label>
+                        <input type="number" id="num-temporadas" name="num-temporadas" required>
+                    </div>
+
+                    <div>
+                        <label>Capa:</label>
+                        <input type="file" id="capa-serie" name="capa-serie" accept="image/*">
+                    </div>
+
+                    <div class="botoes-form">
+                        <div>
+                            <button class="btn-adicionar" type="submit">Adicionar</button>
+                        </div>
+                        <div>
+                            <button class="btn-limpar" type="reset">Limpar</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <script type="module" src="./js/list.js"></script>
+    <script type="module" src="./js/create.js"></script>
+    <script type="module" src="./js/delete.js"></script>
+
+</body>
+</html>

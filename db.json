@@ -1,0 +1,39 @@
+{
+  "series": [
+    {
+      "id": "82a1",
+      "name": "House of the Dragon",
+      "seasons": 2,
+      "genre": "Fantasia",
+      "cover": "blob:http://127.0.0.1:5500/c34ef155-2f6f-4614-8e4e-be07da8fcf4d"
+    },
+    {
+      "id": "9573",
+      "name": "Stranger Things",
+      "seasons": 5,
+      "genre": "Sci-Fi",
+      "cover": "blob:http://127.0.0.1:5500/5848cbfe-39f9-48e5-92a5-3c643ee70ddb"
+    },
+    {
+      "id": "95a0",
+      "name": "American Horror Story",
+      "seasons": 12,
+      "genre": "Terror",
+      "cover": "blob:http://127.0.0.1:5500/3731bf6f-1ea4-478a-8626-44808b5d3472"
+    },
+    {
+      "id": "bb38",
+      "name": "You",
+      "seasons": 4,
+      "genre": "Suspense",
+      "cover": "blob:http://127.0.0.1:5500/335e6af5-f3f4-4e39-9349-b12c5ce93cf9"
+    },
+    {
+      "id": "4c29",
+      "name": "Sex Education",
+      "seasons": 4,
+      "genre": "Comédia",
+      "cover": "blob:http://127.0.0.1:5500/e07b425c-9579-41f8-b700-d59718a956e7"
+    }
+  ]
+}
